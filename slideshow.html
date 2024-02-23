@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <style>
+        #slideShow {
+            position: relative;
+            max-width: 500px;
+            margin: auto;
+            overflow: hidden;
+        }
+       .slider {
+            display: none;
+            width: 100%;
+       }
+       .slider img {
+            width: 100%;
+            height: 500px;
+       }
+       .first-slide {
+        display: block;
+       }
+       button {
+        margin: 10px 5px;
+        padding: 5px 10px;
+       }
+    </style>
+</head>
+<body>
+    <div id="slideShow">
+        <div class="slider first-slide">
+            <img src="./img/vijay.jpg" alt="vijay" >
+        </div>
+        <div class="slider">
+            <img src="./img/ajith.jpg" alt="ajith">
+        </div>
+        <div class="slider">
+            <img src="./img/rajini.jpg" alt="rajini" >
+        </div>
+        <div class="slider">
+            <img src="./img/kamal.jpg" alt="kamal">
+        </div>
+        <div class="slider">
+            <img src="./img/surya.jpg" alt="surya">
+        </div>
+        <div class="slider">
+            <img src="./img/dhanush.jpg" alt="dhanush">
+        </div><div class="slider">
+            <img src="./img/nayan.jpg" alt="nayan">
+        </div>
+        <div class="slider">
+            <img src="./img/sam.jpg" alt="sam">
+        </div>
+    </div>
+    <center>
+        <button id="startStopBtn" onclick="startStopSlide()">Start</button>
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+    </center>
+</body>
+</html>
+<script src="./slideshow.js"></script>
